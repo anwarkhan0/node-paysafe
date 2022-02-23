@@ -56,8 +56,8 @@ app.post("/checkout", async (req, res) => {
         tracker: data.data.token,
         orderId: "1234",
         source: "custom",
-        cancelUrl: "https://--base-url--/cancel",
-        redirectUrl: "https://--base-url--/paymentComplete",
+        cancelUrl: `${process.env.BASE_URL}/cancel`,
+        redirectUrl: `${process.env.BASE_URL}/paymentComplete`,
       });
     })
     .then((url) => {
