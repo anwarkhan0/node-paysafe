@@ -3,7 +3,7 @@ const Safepay = require("safepay");
 const express = require("express");
 const path = require("path");
 const app = express();
-const port = 3000 || process.env.PORT;
+const port = process.env.PORT || 3000;
 const bodyParser = require('body-parser');
 const { readSync } = require("fs");
 app.use( bodyParser.json() );       // to support JSON-encoded bodies
