@@ -1,0 +1,17 @@
+{
+  "name": "safepay",
+  "version": "1.0.0",
+  "description": "node safepay app.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "anwar",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "safepay": "^0.0.2"
+  }
+}
